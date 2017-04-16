@@ -1,0 +1,167 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+body
+{
+  font-family: 'Helvetica Neue', sans-seri;
+  font-weight: bold;
+  background-image: url('images/glass.jpg');
+  filter: al;
+  background-position: center;
+  background-size: cover;
+  font-size: 20px;
+  background-color:black;
+  padding:50px
+}
+.menu
+{
+  display: block;
+margin-top:10%;
+margin-left: 4%;
+}
+ul#navmenu ,.submenu1
+{
+  list-style-type: none;
+}
+#navmenu li
+{
+  text-align:center;
+  width:150px;
+  position:relative;
+  float:left;
+  margin-right: 4px;
+  transition: all .3s ease-in-out;
+
+}
+ul li a
+{
+  display:block;
+  padding: 1px;
+  width:150px;
+  height:30px;
+  text-decoration: none;
+  color: #fff;
+  transition: all .3s ease-in-out;
+  background-color:rgba(0,0,0,0.6);
+  border-radius:5px;
+  margin-top: 2px
+
+}
+#navmenu>li:hover>a
+{
+  background-color:rgba(48,79,254,.5);
+  color:white;
+}
+ul.submenu1 a:hover
+{
+  background-color: rgba(11,216,19,0.7);
+  animation:slide-up 1s linear;
+  color:black;
+
+}
+ul.submenu1
+{
+  display:none;
+  position: absolute;
+  top:34px;
+  left:0px;
+}
+ul.submenu1 li
+{
+  display:block;
+  opacity:0;
+  transform:scale(0.3)translateY(-50px);
+  transition: all 1s ease-out;
+
+}
+ul li:hover .submenu1
+{
+ display:block;
+}
+@-webkit-keyframes slide-up
+{
+  0%
+  {
+    transform: translateY(0px);
+    font-size:20px;
+  }
+  25%
+  {
+    transform: translateY(5px);
+    font-size:20.4px;
+  }
+  50%
+  {
+      transform: translateY(0px);
+      font-size:20.6px;
+  }
+  75%
+  {
+    transform: translateY(-5px);
+    font-size:20.8px;
+  }
+  100%
+  {
+    transform: translateY(0px);
+    font-size:21px;
+  }
+}
+@-moz-keyframes slide-up
+{
+  0%
+  {
+    transform: translateY(0px);
+    font-size:20px;
+  }
+  25%
+  {
+    transform: translateY(5px);
+    font-size:20.4px;
+  }
+  50%
+  {
+      transform: translateY(0px);
+      font-size:20.6px;
+  }
+  75%
+  {
+    transform: translateY(-5px);
+    font-size:20.8px;
+  }
+  100%
+  {
+    transform: translateY(0px);
+    font-size:21px;
+  }
+}
+}
+@keyframes slide-up
+{
+  0%
+  {
+    transform: translateY(0px);
+    font-size:20px;
+  }
+  25%
+  {
+    transform: translateY(5px);
+    font-size:20.4px;
+  }
+  50%
+  {
+      transform: translateY(0px);
+      font-size:20.6px;
+  }
+  75%
+  {
+    transform: translateY(-5px);
+    font-size:20.8px;
+  }
+  100%
+  {
+    transform: translateY(0px);
+    font-size:21px;
+  }
+}
+}

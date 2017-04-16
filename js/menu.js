@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-  $('#navmenu li').mouseenter(function(){
+   var navmenuli =  $('#navmenu li');
+
+  navmenuli.mouseenter(function(){
   var id=  $(this).find('ul').attr('id');
     $('#'+id+' '+'li').each(function(i){
       setTimeout(function(){
@@ -11,7 +13,7 @@ $(document).ready(function(){
     },100*(i+1));
   });
 });
-$('#navmenu li').mouseleave(function(){
+navmenuli.mouseleave(function(){
 var id=  $(this).find('ul').attr('id');
 
     $('#'+id+' '+'li').css({
@@ -19,7 +21,5 @@ var id=  $(this).find('ul').attr('id');
       'opacity':'0'
 
     });
-});
-
 
 });
